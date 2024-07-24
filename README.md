@@ -85,8 +85,8 @@ mount -o remount,rw /
 
 Для этого нам понадобится выяснить, как прописаны соответствующие блочные устройства в двух файлах - ***/etc/fstab*** и ***/boot/grub/grub.cfg***.
 ```
-cat /etc/fstab | grep "vg-sys"
-cat /boot/grub/grub.cfg" | grep "vg-sys"
+cat /etc/fstab | grep "vg--sys"
+cat /boot/grub/grub.cfg" | grep "vg--sys"
 vgrename vg-system vg-sys
 ```
 После этого обновим настройки в этих файлах:
